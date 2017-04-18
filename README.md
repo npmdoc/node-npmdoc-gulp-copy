@@ -1,9 +1,14 @@
-# api documentation for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-copy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-copy)
+# npmdoc-gulp-copy
+
+#### api documentation for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-copy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-copy)
+
 #### Plugin copying files to a new destination and using that destination for other actions
 
-[![NPM](https://nodei.co/npm/gulp-copy.png?downloads=true)](https://www.npmjs.com/package/gulp-copy)
+[![NPM](https://nodei.co/npm/gulp-copy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-copy)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-copy_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Klaas Cuvelier",
-        "email": "cuvelierklaas@gmail.com",
         "url": "http://klaascuvelier.io"
     },
     "bugs": {
@@ -51,13 +55,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "klaascuvelier",
-            "email": "cuvelierklaas@gmail.com"
+            "name": "klaascuvelier"
         }
     ],
     "name": "gulp-copy",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/klaascuvelier/gulp-copy.git"
@@ -69,16 +71,6 @@
     "version": "1.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-copy](#apidoc.module.gulp-copy)
-
-
-
-# <a name="apidoc.module.gulp-copy"></a>[module gulp-copy](#apidoc.module.gulp-copy)
 
 
 
