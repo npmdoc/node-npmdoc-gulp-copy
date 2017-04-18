@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/klaascuvelier/gulp-copy"
-
-    >gulp-copy (v1.0.0)</a>
+    <a href="https://github.com/klaascuvelier/gulp-copy">gulp-copy (v1.0.0)</a>
 </h1>
 <h4>Plugin copying files to a new destination and using that destination for other actions</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-copy">module gulp-copy</a><ol>
 
@@ -121,16 +114,16 @@
     var throughOptions = { objectMode: true };
 
     // Make sure a destination was verified
-    if (typeof destination !== &#x27;string&#x27;) {
-        throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;No valid destination specified&#x27;);
+    if (typeof destination !== 'string') {
+        throw new PluginError('gulp-copy', 'No valid destination specified');
     }
 
     // Default options
     if (opts === undefined) {
         opts = opts || {};
     }
-    else if (typeof opts !== &#x27;object&#x27; || opts === null) {
-        throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;No valid options specified&#x27;);
+    else if (typeof opts !== 'object' || opts === null) {
+        throw new PluginError('gulp-copy', 'No valid options specified');
     }
 
     return through(throughOptions, transform);
@@ -147,31 +140,31 @@
         var fileDestination = null;
 
         if (file.isStream()) {
-            return cb(new PluginError(&#x27;gulp-copy&#x27;, &#x27;Streaming not supported&#x27;));
+            return cb(new PluginError('gulp-copy', 'Streaming not supported'));
         }
 
         if (!file.isNull()) {
-            rel = path.relative(file.cwd, file.path).replace(/\\/g, &#x27;/&#x27;);
+            rel = path.relative(file.cwd, file.path).replace(/\\/g, '/');
 
             // Strip path prefixes
             if (opts.prefix) {
                 var p = opts.prefix;
-                while (p-- &#x3e; 0) {
-                    rel = rel.substring(rel.indexOf(&#x27;/&#x27;) + 1);
+                while (p-- &gt; 0) {
+                    rel = rel.substring(rel.indexOf('/') + 1);
                 }
             }
 
-            fileDestination = destination + &#x27;/&#x27; + rel;
+            fileDestination = destination + '/' + rel;
 
             // Make sure destination exists
             if (!doesPathExist(fileDestination)) {
-                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf(&#x27;/&#x27;)));
+                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf('/')));
             }
 
             // Copy the file
             copyFile(file.path, fileDestination, function (error) {
                 if (error) {
-                    throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;Could not copy file &#x3c;&#x27; +  file.path + &#x27;&#x3e;: &#x27; + error.message);
+                    throw new PluginError('gulp-copy', 'Could not copy file &lt;' +  file.path + '&gt;: ' + error.message);
                 }
 
                 // Update path for file so this path is used later on
@@ -201,16 +194,16 @@
     var throughOptions = { objectMode: true };
 
     // Make sure a destination was verified
-    if (typeof destination !== &#x27;string&#x27;) {
-        throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;No valid destination specified&#x27;);
+    if (typeof destination !== 'string') {
+        throw new PluginError('gulp-copy', 'No valid destination specified');
     }
 
     // Default options
     if (opts === undefined) {
         opts = opts || {};
     }
-    else if (typeof opts !== &#x27;object&#x27; || opts === null) {
-        throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;No valid options specified&#x27;);
+    else if (typeof opts !== 'object' || opts === null) {
+        throw new PluginError('gulp-copy', 'No valid options specified');
     }
 
     return through(throughOptions, transform);
@@ -227,31 +220,31 @@
         var fileDestination = null;
 
         if (file.isStream()) {
-            return cb(new PluginError(&#x27;gulp-copy&#x27;, &#x27;Streaming not supported&#x27;));
+            return cb(new PluginError('gulp-copy', 'Streaming not supported'));
         }
 
         if (!file.isNull()) {
-            rel = path.relative(file.cwd, file.path).replace(/\\/g, &#x27;/&#x27;);
+            rel = path.relative(file.cwd, file.path).replace(/\\/g, '/');
 
             // Strip path prefixes
             if (opts.prefix) {
                 var p = opts.prefix;
-                while (p-- &#x3e; 0) {
-                    rel = rel.substring(rel.indexOf(&#x27;/&#x27;) + 1);
+                while (p-- &gt; 0) {
+                    rel = rel.substring(rel.indexOf('/') + 1);
                 }
             }
 
-            fileDestination = destination + &#x27;/&#x27; + rel;
+            fileDestination = destination + '/' + rel;
 
             // Make sure destination exists
             if (!doesPathExist(fileDestination)) {
-                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf(&#x27;/&#x27;)));
+                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf('/')));
             }
 
             // Copy the file
             copyFile(file.path, fileDestination, function (error) {
                 if (error) {
-                    throw new PluginError(&#x27;gulp-copy&#x27;, &#x27;Could not copy file &#x3c;&#x27; +  file.path + &#x27;&#x3e;: &#x27; + error.message);
+                    throw new PluginError('gulp-copy', 'Could not copy file &lt;' +  file.path + '&gt;: ' + error.message);
                 }
 
                 // Update path for file so this path is used later on
@@ -309,3 +302,4 @@
     ]
 </div>
 </div>
+</body></html>
