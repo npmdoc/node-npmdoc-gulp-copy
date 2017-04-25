@@ -1,6 +1,6 @@
 # npmdoc-gulp-copy
 
-#### api documentation for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-copy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-copy)
+#### basic api documentation for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-copy.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-copy)
 
 #### Plugin copying files to a new destination and using that destination for other actions
 
@@ -68,7 +68,8 @@
         "lint": "eslint ./lib -c ./.eslintrc",
         "test": "jasmine-node test/spec"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
